@@ -1,0 +1,4 @@
+User-agent: *
+
+# Sitemaps
+Sitemap: https://mage2cookbook.com/sitemap.xml
