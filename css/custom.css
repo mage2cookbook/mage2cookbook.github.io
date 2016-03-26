@@ -2,6 +2,7 @@ span.fontawesome-text {display: none;}
 .mfp-content p {color: #000;}
 .mfp-content a {text-decoration: none;}
 div.white-popup {color:#000;}
+#button-wrap-inner {padding: 0 0 0 30%;} 
 
 .btn {
   background: #3498db;
