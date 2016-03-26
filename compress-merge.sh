@@ -13,10 +13,10 @@ java -jar /usr/share/yui-compressor/yui-compressor.jar magnific.css -o magnific.
 java -jar /usr/share/yui-compressor/yui-compressor.jar normalize.css -o normalize.css.min.css
 
 cat *min.css > $dt.css
-
+echo $dt.css
 #JS - is al minified
 cd $DIR/js
 cat *.js > $dt.js
-
+echo $dt.js
 #einde
 
