@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
     // Before generating any new files, remove any previously-created files.
     clean: {
-      tests: ['tmp', 'dist', 'tests/output.css']
+      tests: ['tmp', 'dist', 'css/output.css']
     },
 
     uncss: {
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       },
       test: {
         files: {
-          'tests/output.css': 'tests/index.html'
+          'css/output.css': 'index.html'
         },
         options: {
           report: 'gzip'
@@ -48,8 +48,7 @@ module.exports = function(grunt) {
       },
       testMany: {
         files: {
-          'tests/output.css': 'tests/index.html',
-          'tests/output2.css': 'tests/index2.html',
+          'css/output.css': 'index.html',
         },
         options: {
           report: 'gzip'
@@ -57,7 +56,7 @@ module.exports = function(grunt) {
       },
       testUncssrc: {
         files: {
-          'tests/output.css': 'tests/index.html'
+          'css/output.css': 'index.html'
         },
         options: {
           uncssrc: 'tests/.uncssrc'
@@ -68,7 +67,7 @@ module.exports = function(grunt) {
     processhtml: {
       dist: {
         files: {
-          'dist/index.html': 'tests/app/index.html'
+          'index.html': 'index.html'
         }
       }
     },
@@ -89,9 +88,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'tests/app/',
-          src: ['img/**', 'js/**', '*.png', '*.xml', '*.txt', '*.ico', '!*.html'],
-          dest: 'dist/'
+          cwd: '/',
+          src: ['images/**', 'js/**', '*.png', '*.xml', '*.txt', '*.ico', '!*.html'],
+          dest: '/'
         }]
       }
     },
